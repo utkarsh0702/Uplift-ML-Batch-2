@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Forest Fire Prediction</title>
+    </head>
+    <body>
+        <h2>Forest Fire Prediction</h2>
+
+        <form action="/predict" method="POST">
+          <label>Oxygen Level:</label>
+          <input type="text" id="oxygen" name="oxygen"><br>
+          <label>Temperature:</label>
+          <input type="text" id="temp" name="temp"><br><br>
+          <label>Humidity:</label>
+          <input type="text" id="humidity" name="humidity"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+        
+        <h4>{{pred}}</h4>
+
+    </body>
+</html>
